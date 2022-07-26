@@ -37,7 +37,7 @@ dplyr::glimpse(italy_matches)
 
 We can add filtering conditions:
 
-```{r uss_get_matches}
+```{r}
 uss_get_matches("england", season == 1966) |>
   glimpse()
 ```
