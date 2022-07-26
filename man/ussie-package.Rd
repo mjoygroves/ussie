@@ -12,6 +12,7 @@ Description: This is a demo package for the "Building Tidy Tools" workshop at at
 Useful links:
 \itemize{
   \item \url{https://github.com/mjoygroves/ussie}
+  \item \url{https://mjoygroves.github.io/ussie/}
   \item Report bugs at \url{https://github.com/mjoygroves/ussie/issues}
 }
 
