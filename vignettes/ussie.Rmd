@@ -30,8 +30,8 @@ glimpse(spain)
 
 "uss_get_matches()" allows you to get matches from a specific country. 
 
-```{r}
+```{r uss_get_matches}
 italy_matches <- uss_get_matches("italy")
-dplyr::glipse(italy_matches)
+dplyr::glimpse(italy_matches)
 ```
 
