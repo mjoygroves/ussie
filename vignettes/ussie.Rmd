@@ -25,3 +25,13 @@ ussie lets you build European football data from the engsoccerdata package by ma
 spain <- uss_make_matches(engsoccerdata::spain, "Spain")
 glimpse(spain)
 ```
+
+## get country data
+
+"uss_get_matches()" allows you to get matches from a specific country. 
+
+```{r}
+italy_matches <- uss_get_matches("italy")
+dplyr::glipse(italy_matches)
+```
+
