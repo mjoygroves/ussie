@@ -4,10 +4,15 @@
 \alias{uss_get_matches}
 \title{Get a league-play tibble}
 \usage{
-uss_get_matches(country = uss_countries())
+uss_get_matches(country = uss_countries(), ...)
 }
 \arguments{
 \item{country}{a country (Spain, Italy, Germany, England, Holland)}
+
+\item{...}{<\code{\link[dplyr:dplyr_data_masking]{data-masking}}> Expressions that return a
+logical value, and are defined in terms of the variables in \code{.data}.
+If multiple expressions are included, they are combined with the \code{&} operator.
+Only rows for which all conditions evaluate to \code{TRUE} are kept.}
 }
 \value{
 dataframe, tibble
@@ -25,4 +30,5 @@ the source data.
 }
 \examples{
 uss_get_matches("england")
+uaa_get_matches("england", season == 1966)
 }
