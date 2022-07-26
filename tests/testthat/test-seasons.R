@@ -51,18 +51,17 @@ test_that("uss_make_seasons_final() works", {
   ## calculate final results using cumulative results, expect same result
 
   italy_cumulative_final <-
-     uss_make_seasons_cumulative(teams_matches_italy) |>
-     dplyr::group_by(
-       dplyr::across(cols_seasons_grouping())
-     ) |>
-     dplyr::filter(
-       .data$matches == max(.data$matches),
-       .preserve = TRUE
-     ) |>
-     arrange_final()
+    uss_make_seasons_cumulative(teams_matches_italy) |>
+    dplyr::group_by(
+      dplyr::across(cols_seasons_grouping())
+    ) |>
+    dplyr::filter(
+      .data$matches == max(.data$matches),
+      .preserve = TRUE
+    ) |>
+    arrange_final()
 
-   italy_final <- uss_make_seasons_final(teams_matches_italy)
+  italy_final <- uss_make_seasons_final(teams_matches_italy)
 
-   expect_identical(italy_final, italy_cumulative_final)
-
+  expect_identical(italy_final, italy_cumulative_final)
 })

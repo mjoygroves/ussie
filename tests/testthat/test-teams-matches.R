@@ -13,7 +13,7 @@ test_that("uss_make_teams_matches works", {
   expect_true(tibble::is_tibble(italy))
   expect_named(italy, cols_teams_matches())
 
-  # not comprehensive, but may give us an indication if something changes
+  # not comprehensive, but may give us a indication if something changes
   expect_snapshot(dplyr::glimpse(italy))
 
 })

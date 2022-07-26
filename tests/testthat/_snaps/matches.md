@@ -1,4 +1,4 @@
-# uss_makes_matches works
+# uss_make_matches works
 
     Code
       dplyr::glimpse(italy)
